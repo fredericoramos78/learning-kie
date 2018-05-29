@@ -1,0 +1,10 @@
+package com.loconoco.tutorials.learningkie;
+
+
+rule "Is there an elder here"
+salience 10
+when
+   exists( Person(age > 60) )
+then
+   insert(new UseFormalLanguage())
+end
