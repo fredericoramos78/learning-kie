@@ -1,0 +1,10 @@
+package com.fredericoramos.tutorials.learningkie;
+
+rule "Greet formal in the evening"
+when
+    UseFormalLanguage()
+
+    CurrentHour(hour > 19)
+then
+    greetingsResult.setGreetingMessage("Good evening");
+end

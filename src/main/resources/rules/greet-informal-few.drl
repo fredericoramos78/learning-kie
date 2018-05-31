@@ -1,0 +1,10 @@
+package com.fredericoramos.tutorials.learningkie;
+
+rule "Greet informal few people at any time"
+when
+    not (UseFormalLanguage())
+
+    not (HasManyPeople())
+then
+    greetingsResult.setGreetingMessage("Hey bro");
+end

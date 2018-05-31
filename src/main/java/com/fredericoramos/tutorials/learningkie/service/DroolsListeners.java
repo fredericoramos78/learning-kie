@@ -1,4 +1,4 @@
-package com.loconoco.tutorials.learningkie.service;
+package com.fredericoramos.tutorials.learningkie.service;
 
 import org.kie.api.event.rule.*;
 import org.springframework.stereotype.Component;

@@ -1,0 +1,15 @@
+package com.fredericoramos.tutorials.learningkie;
+
+
+import com.fredericoramos.tutorials.learningkie.model.*
+
+
+global com.fredericoramos.tutorials.learningkie.service.GreetingsResult greetingsResult;
+
+
+declare HasManyPeople
+   nbrOfPeople: Long
+end
+
+declare UseFormalLanguage
+end

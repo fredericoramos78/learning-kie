@@ -100,12 +100,17 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+               <directory>src/main/resources</directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.loconoco.tutorials.learningkie.Main</mainClass>
+                    <mainClass>com.fredericoramos.tutorials.learningkie.Main</mainClass>
                 </configuration>
             </plugin>
 

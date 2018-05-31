@@ -1,0 +1,10 @@
+package com.fredericoramos.tutorials.learningkie;
+
+rule "Greet informal many people at any time"
+when
+    not (UseFormalLanguage())
+
+    HasManyPeople()
+then
+    greetingsResult.setGreetingMessage("Wazap dudes");
+end

@@ -1,10 +1,9 @@
-package com.loconoco.tutorials.learningkie;
+package com.fredericoramos.tutorials.learningkie;
 
 
 rule "Count how many people we are dealing with"
-salience 10
 when
-   accumulate( People(); $total: count(1); $total > 3)
+   accumulate( Person(); $total: count(1); $total > 3)
 then
-   insert(new IsManyPeople($total))
+   insert(new HasManyPeople($total));
 end

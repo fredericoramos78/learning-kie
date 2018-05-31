@@ -1,4 +1,4 @@
-package com.loconoco.tutorials.learningkie.model;
+package com.fredericoramos.tutorials.learningkie.model;
 
 public class Person {
 
@@ -24,5 +24,10 @@ public class Person {
 
     public void setLang(String lang) {
         this.lang = lang;
+    }
+    
+    @Override
+    public String toString() {
+        return "(Person is " + this.age + "yrs old)";
     }
 }
